@@ -1,0 +1,76 @@
+<!-- grid-auto-rows and grid-auto-column properties specify the height and width of rows that are automatically 
+created when there is no explicit row definition and column definition respectively -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Example</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      grid-auto-rows: 50px;
+    }
+
+    .grid-item {
+      background-color: lightblue;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+   <!-- <p>`grid-auto-row` and `grid-auto-column` are properties in CSS that allow you to define the size of rows and columns in a grid layout when they are created implicitly (i.e., not explicitly defined using `grid-template-rows` or `grid-template-columns`).
+
+    Here's an explanation of each property along with some code examples:
+    
+    1. `grid-auto-row`:
+       - This property is used to set the size of implicitly created rows in a grid layout.
+       - It takes values like `auto`, `min-content`, `max-content`, length values (e.g., `100px`), percentages (e.g., `50%`), etc.
+    
+       Example:
+    
+      css
+       .grid-container {
+         display: grid;
+         grid-template-columns: 100px 100px;
+         grid-auto-rows: 50px; /* Sets the size of implicitly created rows */
+       }
+       
+    
+       In this example, the explicitly defined rows will have a height of `50px`, and any additional rows that are created implicitly will also have a height of `50px`.
+    
+    2. grid-auto-column:
+       - This property is used to set the size of implicitly created columns in a grid layout.
+       - It takes values like `auto`, `min-content`, `max-content`, length values (e.g., `100px`), percentages (e.g., `50%`), etc.
+    
+       Example:
+    
+       css
+       .grid-container {
+         display: grid;
+         grid-template-rows: 100px 100px;
+         grid-auto-columns: 50px; /* Sets the size of implicitly created columns */
+       }
+      
+    
+       In this example, the explicitly defined columns will have a width of `50px`, and any additional columns that are created implicitly will also have a width of `50px`.
+    </p> -->
+</body>
+</html> 
+
+<!-- 
+In this example, we have a grid container with two explicitly defined columns of `100px` each. The `grid-auto-rows` property sets the height of implicitly created rows to `50px`. As a result, all the rows (both explicitly defined and implicitly created) will have a height of `50px`. -->

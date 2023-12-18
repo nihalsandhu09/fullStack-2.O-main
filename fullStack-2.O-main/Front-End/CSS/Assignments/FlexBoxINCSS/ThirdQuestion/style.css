@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-Div{
+    width: 250px;
+    height: 250px;
+    background-color: greenyellow;
+}
+   
+   

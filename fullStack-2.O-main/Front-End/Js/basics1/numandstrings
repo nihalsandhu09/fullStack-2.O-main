@@ -1,0 +1,9 @@
+const firstname = 'hello'
+const lastName = 'HC'
+console.log(firstname +  ' '+ lastName)
+console.log(` my firstname is ${firstname} and my lastname is ${lastName}`)
+
+const username = new String('hitesh')
+console.log(username[0])
+console.log(username.length)
+console.log(username.includes('h'))

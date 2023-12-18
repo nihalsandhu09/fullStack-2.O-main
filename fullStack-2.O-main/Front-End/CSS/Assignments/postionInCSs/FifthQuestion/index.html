@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index Example</title>
+    <style>
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            top: 70px;
+            left: 70px;
+            z-index: 1;
+        }
+
+        .box3 {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: absolute;
+            top: 90px;
+            left: 90px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- `z-index` is a CSS property that controls the stacking order of elements on a web page. It determines which elements appear in front of or behind other elements. Elements with a higher `z-index` value will be placed in front of elements with a lower value.
+
+Here's an example to illustrate how `z-index` works:
+
+```html -->
+    <div class="box1">Box 1</div>
+    <div class="box2">Box 2</div>
+    <div class="box3">Box 3</div>
+</body>
+</html>
+```
+
+<!-- In this example, we have three `div` elements with classes `box1`, `box2`, and `box3`. Each has a `z-index` property set. 
+
+- `.box1` has a `z-index` of 2.
+- `.box2` has a `z-index` of 1.
+- `.box3` has a `z-index` of 3.
+
+Since `.box3` has the highest `z-index`, it will be displayed on top of the other two boxes. The stacking order will be `.box3` > `.box1` > `.box2`.
+
+Keep in mind that `z-index` only works on elements with a specified `position` property (e.g., `relative`, `absolute`, or `fixed`). Elements with a higher `z-index` value will appear on top of elements with lower values within the same stacking context. If elements are in different stacking contexts, the `z-index` values are compared within their respective contexts. -->

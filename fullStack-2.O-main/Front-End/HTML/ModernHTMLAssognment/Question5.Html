@@ -1,0 +1,86 @@
+<!-- Create a web page that highlight the features of HTMl 5. USe appropriate semantic tags to sructure the content and showcase at least three Key features of HTMl5 whith explanation  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Exploring HTML5 Features</h1>
+    </header>
+
+    <section>
+        <h2>Semantic Elements</h2>
+        <p>HTML5 introduces a set of semantic elements like &lt;header&gt;, &lt;footer&gt;, &lt;nav&gt;, and more. These elements provide a clear structure to the content, making it easier for search engines and assistive technologies to understand.</p>
+        <article>
+            <h3>Example: Using &lt;header&gt; and &lt;footer&gt;</h3>
+            <header>
+                <h4>Page Header</h4>
+            </header>
+            <p>Main Content Goes Here</p>
+            <footer>
+                <p>Page Footer</p>
+            </footer>
+        </article>
+    </section>
+       
+    <!-- Semantic Elements:
+
+The <header> and <footer> elements are used to create structural elements for the page header and footer. The <article> element is used to group related content.
+Example: The code demonstrates how to use <header> and <footer> elements to structure a page with a header, main content, and footer. -->
+    <section>
+        <h2>Audio and Video Support</h2>
+        <p>With HTML5, embedding multimedia content is easier than ever. The &lt;audio&gt; and &lt;video&gt; elements allow you to include audio and video files directly in your web pages, eliminating the need for third-party plugins like Flash.</p>
+        <article>
+            <h3>Example: Embedding Video</h3>
+            <video controls width="400">
+                <source src="example_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </article>
+    </section>
+<!-- Audio and Video Support:
+
+The <audio> and <video> elements are used to embed audio and video content. The controls attribute provides playback controls for the user.
+Example: The code embeds a video file (example_video.mp4) and provides controls for playback. -->
+    <section>
+        <h2>Canvas</h2>
+        <p>The &lt;canvas&gt; element provides a drawing surface for creating graphics, animations, and interactive elements using JavaScript. This feature is particularly useful for games, data visualizations, and dynamic content generation.</p>
+        <article>
+            <h3>Example: Drawing with Canvas</h3>
+            <canvas id="myCanvas" width="200" height="100"></canvas>
+            <script>
+                var canvas = document.getElementById('myCanvas');
+                var ctx = canvas.getContext('2d');
+                ctx.fillStyle = '#FF0000';
+                ctx.fillRect(0, 0, 150, 75);
+            </script>
+        </article>
+    </section>
+<!-- Canvas:
+
+The <canvas> element provides a drawing surface. JavaScript is used to draw a red rectangle on the canvas.
+Example: The code shows how to create a canvas and draw a red rectangle using JavaScript. -->
+    <footer>
+      
+    </footer>
+
+</body>
+</html>

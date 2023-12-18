@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+header>h1{
+font-size: 50px;
+margin: 10px;
+}
+main>ol{
+list-style-type: lower-roman;
+margin: 30px 0px  0 30px  ;
+
+}
+ol>li{
+    font-size: 20px;
+    font-weight: 400;
+}

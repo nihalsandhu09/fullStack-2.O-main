@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #333;
+  }
+  
+  .border1 {
+    border: 2px solid #FF5733;
+    border-radius: 5px;
+  }
+  
+  .border2 {
+    border: 2px dashed #33FF57;
+    border-radius: 5px;
+  }
+  
+  .border3 {
+    border: 2px double #5733FF;
+    border-radius: 5px;
+  }
+  
+  .border4 {
+    border: 2px groove #FF5733;
+    border-radius: 5px;
+  }
+  
+  .border5 {
+    border: 2px ridge #33FF57;
+    border-radius: 5px;
+  }
+  

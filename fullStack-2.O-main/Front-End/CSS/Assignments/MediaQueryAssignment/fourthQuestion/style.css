@@ -1,0 +1,37 @@
+.grid-conntainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.item{
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
+.header{
+    background-color: red;
+
+}
+.sidebar{
+    background-color: green;
+}
+.main{
+    background-color: blue;
+
+}
+.footer{
+    background-color: chocolate;
+}
+
+@media screen and ( min-width: 768px){
+    .grid-conntainer{
+        grid-template-columns: repeat(3, 1fr) ;
+
+    }
+}

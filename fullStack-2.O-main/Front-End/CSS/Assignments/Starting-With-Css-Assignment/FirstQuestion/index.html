@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css">   This is how we can add external style sheet to our HTml page  -->
+    <style> 
+    /* This is How we can use internal style Sheet  */
+        .div1{
+            color: blue;
+        }
+    </style>
+     <!-- <link rel="stylesheet" href="./style.css">   This is how we can add external style sheet to our HTml page  -->
+</head>
+<body>
+    <!-- Create a simple page with some div tags and show different ways to add CSS as well as what happens when you target the same elements with inline,internal, and external CSS. Als , utilize comments in the project where required.  -->
+
+
+   <!-- thus is how we can use inline style--> <div class="div1" "><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit illo aperiam similique, nam maxime quaerat quia omnis possimus animi velit veniam. Amet excepturi, nobis ut voluptas atque aperiam harum.</p></div>
+ 
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit illo aperiam similique, nam maxime quaerat quia omnis possimus animi velit veniam. Amet excepturi, nobis ut voluptas atque aperiam harum.</p></div>
+ 
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit illo aperiam similique, nam maxime quaerat quia omnis possimus animi velit veniam. Amet excepturi, nobis ut voluptas atque aperiam harum.</p></div>
+ 
+    <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugit illo aperiam similique, nam maxime quaerat quia omnis possimus animi velit veniam. Amet excepturi, nobis ut voluptas atque aperiam harum.</p></div>
+ 
+    <!-- When you target the same HTML element with inline CSS, external CSS, and internal CSS, the CSS rules will be applied based on the specificity and the order of precedence. Here's how it works:
+
+1. **Inline CSS**: This has the highest specificity. It means that any CSS rule applied directly to an HTML element using the `style` attribute will override any other CSS rules targeting the same element, regardless of where they are defined (external or internal).
+
+   Example:
+   ```html
+   <div style="color: red;">This text will be red.</div>
+   ```
+
+2. **External CSS**: This is a CSS file linked to your HTML document using the `<link>` element. It has lower specificity than inline CSS. If there is a conflict between external CSS and internal CSS, the rule in the external CSS will be applied if it is more specific or if it appears later in the document.
+
+   Example (external.css):
+   ```css
+   div {
+     color: blue;
+   }
+   ```
+
+3. **Internal CSS**: This is CSS defined within a `<style>` block in the HTML document or within the `style` element of an HTML document. It has higher specificity than external CSS but lower than inline CSS.
+
+   Example:
+   ```html
+   <style>
+     div {
+       color: green;
+     }
+   </style>
+   ```
+
+Given the above examples, if you have the following HTML:
+
+```html
+<div style="color: red;">This text will be red.</div>
+```
+
+The text will be red because inline CSS has the highest specificity.
+
+If you remove the inline style and have only external and internal CSS:
+
+```html
+<link rel="stylesheet" type="text/css" href="external.css">
+
+<style>
+  div {
+    color: green;
+  }
+</style>
+```
+
+The text will be blue because the external CSS rule is applied, and it comes after the internal CSS rule.
+
+Remember, it's generally considered best practice to use external CSS files for styles, as it helps maintain separation of concerns and keeps your code more organized. Inline styles should be used sparingly for specific cases where they're absolutely necessary.  -->
+      
+</body>
+</html>
