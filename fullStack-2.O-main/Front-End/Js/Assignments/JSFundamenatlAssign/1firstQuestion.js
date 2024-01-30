@@ -15,3 +15,6 @@ function outerFunction(param){
 let fnc = outerFunction("this is param")
 fnc()
 // console.log(outerFunction("this is param") ,fnc())
+
+
+// oueter function is executed but with lexical  scoping we can acces to outer function variable and parameter this happens because of lexical scoping because lexical works on the principle child can acces parents scope and its variables and parameters 
